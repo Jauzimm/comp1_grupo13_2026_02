@@ -1,0 +1,89 @@
+name: Relato de bug
+description: Registre um comportamento incorreto ou inesperado do interpretador.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use um exemplo mínimo que permita reproduzir o problema. Não inclua dados
+        pessoais, segredos ou arquivos desnecessários.
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição do problema
+      description: Explique claramente o que está errado.
+      placeholder: O interpretador avalia a soma antes da multiplicação.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: componente
+    attributes:
+      label: Componente afetado
+      options:
+        - Lexer / tokenização
+        - Parser / AST
+        - Análise semântica
+        - Avaliador / runtime
+        - Ambiente / escopo
+        - Tratamento de erros
+        - CLI / entrada e saída
+        - Testes / infraestrutura
+        - Não sei identificar
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: Inclua o menor código Python que ainda apresenta o problema e o comando utilizado.
+      placeholder: |
+        1. Crie `exemplo.py` com:
+           ```python
+           print(2 + 3 * 4)
+           ```
+        2. Execute `python -m interpretador exemplo.py`.
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      placeholder: A saída deveria ser `14`.
+    validations:
+      required: true
+
+  - type: textarea
+    id: atual
+    attributes:
+      label: Comportamento atual
+      description: Inclua a saída ou mensagem de erro completa, se houver.
+      placeholder: A saída obtida é `20`.
+    validations:
+      required: true
+
+  - type: input
+    id: commit
+    attributes:
+      label: Versão ou commit
+      description: Informe o hash do commit ou nome da branch onde o erro ocorreu.
+      placeholder: main@abc1234
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Informe sistema operacional e versão do Python usado para executar o projeto.
+      placeholder: Ubuntu 24.04, Python 3.13
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: Adicione logs, hipótese da causa ou outras informações relevantes.
+
