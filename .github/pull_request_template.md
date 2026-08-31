@@ -1,63 +1,28 @@
-## Resumo
+🤗 Obrigado por contribuir! Preencha os campos abaixo para documentar a alteração.
 
-<!-- Explique brevemente o problema e a solução adotada. -->
+## Descrição
+
+<!-- Explique brevemente o que foi alterado. -->
 
 ## Issue relacionada
 
-<!-- Use "Closes #123" para fechar a issue automaticamente após o merge. -->
+<!-- Exemplo: Closes #12 -->
 
 Closes #
 
 ## Tipo de alteração
 
-- [ ] Nova funcionalidade
+- [ ] Feature
 - [ ] Correção de bug
 - [ ] Documentação
-- [ ] Refatoração
-- [ ] Testes ou infraestrutura
-
-## Componente afetado
-
-- [ ] Lexer / tokenização
-- [ ] Parser / AST
-- [ ] Análise semântica
-- [ ] Avaliador / runtime
-- [ ] Ambiente / escopo
-- [ ] Tratamento de erros
-- [ ] CLI / entrada e saída
-- [ ] Documentação
-- [ ] Testes / infraestrutura
+- [ ] Outro
 
 ## Como testar
 
-<!-- Inclua os comandos e exemplos mínimos necessários para revisar a alteração. -->
-
-```bash
-# comando de teste
-```
-
-### Código interpretado
-
-```python
-# exemplo de entrada, se aplicável
-```
-
-### Resultado esperado
-
-```text
-# saída ou erro esperado
-```
-
-## Decisões e limitações
-
-<!-- Registre decisões de gramática/semântica, alternativas consideradas e o que ficou fora do escopo. -->
+<!-- Explique como verificar a alteração. -->
 
 ## Checklist
 
-- [ ] A alteração está limitada ao escopo da issue.
-- [ ] O código está legível e segue o padrão do projeto.
-- [ ] Adicionei ou atualizei testes relevantes.
-- [ ] Os testes existentes continuam passando.
-- [ ] Casos de erro possuem mensagens ou testes adequados.
-- [ ] Atualizei a documentação, quando necessário.
-- [ ] Não incluí arquivos gerados, credenciais ou alterações acidentais.
+- [ ] A alteração funciona corretamente.
+- [ ] Adicionei ou atualizei os testes necessários.
+- [ ] Atualizei a documentação, se necessário.
